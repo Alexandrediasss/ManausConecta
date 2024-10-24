@@ -2,15 +2,20 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import SplashScreen from '../pages/SplashScreen'
 import LoginScreen from '../pages/LoginScreen'
-import Informativo1 from "../pages/Informativo1";
-import Informativo2 from "../pages/Informativo2";
-import Informativo3 from "../pages/Informativo3";
+import CadastroScreen from '../pages/CadastroScreen'
+import Informativo1 from "../pages/Informativo1"
+import Informativo2 from "../pages/Informativo2"
+import Informativo3 from "../pages/Informativo3"
 
 const Stack = createNativeStackNavigator();
 
 export default function Routes(){
     return(
         <Stack.Navigator>
+                name="CadastroScreen"
+                component={CadastroScreen}
+                options={{headerShown: false}}
+            />
             <Stack.Screen
                 name="SplashScreen"
                 component={SplashScreen}
