@@ -2,7 +2,7 @@ import { StyleSheet, TextInputBase } from "react-native";
 
 const styles = StyleSheet.create({
     main:{
-        flex: 1,
+        flexGrow: 1,
         backgroundColor: '#919B8F',
         alignItems: 'center',
     },

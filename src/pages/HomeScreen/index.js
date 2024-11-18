@@ -49,7 +49,7 @@ export default function HomeScreen() {
         <View style={styles.filho3}>
             <TouchableOpacity 
                 style={styles.button1} 
-                onPress={ () => Navigation.navigate('HomeScreen')}>
+                onPress={ () => Navigation.navigate('Curiosidades')}>
                 <Image
                     style={styles.imgIcone}
                     source={require('../../../assets/HomeScreen/curiosidades.png')}

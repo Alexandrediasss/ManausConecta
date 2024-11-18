@@ -8,6 +8,7 @@ import Informativo3 from "../pages/Informativo3";
 import HomeScreen from "../pages/HomeScreen";
 import Hospitais from "../pages/Hospitais";
 import PontosTuristicos from "../pages/PontosTuristicos";
+import Curiosidades from "../pages/Curiosidades";
 
 const Stack = createNativeStackNavigator();
 
@@ -59,6 +60,16 @@ export default function Routes(){
                 options={{
                     headerShown: true, 
                     headerTitle: 'Pontos Turísticos',
+                    headerStyle: { backgroundColor: '#242F1F' },
+                    headerTintColor: '#fff',
+            }} 
+            />
+            <Stack.Screen
+                name="Curiosidades"
+                component={Curiosidades}
+                options={{
+                    headerShown: true, 
+                    headerTitle: 'Curiosidades',
                     headerStyle: { backgroundColor: '#242F1F' },
                     headerTintColor: '#fff',
             }} 
