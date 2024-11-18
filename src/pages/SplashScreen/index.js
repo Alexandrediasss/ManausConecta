@@ -8,21 +8,28 @@ export default function BackgroundInicial2() {
   const Navigation = useNavigation();
 
   return (
-    <View style={styles.main}>
+    <ImageBackground 
+    source={require('../../img/fundo.png')}
+    style={styles.main}>
         <View style={styles.filho1}>
           <Animatable.Image 
-          source={require('../../img/manausconectaverde.png')} 
-          style={styles.textContainer} 
+          source={require('../../img/logo.png')} 
+          style={styles.imgLogo} 
           animation="flipInY"
           />
         </View>
         <Animatable.View style={styles.filho2} animation="fadeInUp" delay={500}>
           <TouchableOpacity 
-            style={styles.button} 
-            onPress={ () => Navigation.navigate('Informativo1')}>
-            <Text style={styles.label1}>Continuar</Text>
+            style={styles.button1} 
+            onPress={ () => Navigation.navigate('HomeScreen')}>
+            <Text style={styles.label1}>Cadastre-se</Text>
+          </TouchableOpacity>
+          <TouchableOpacity 
+            style={styles.button2} 
+            onPress={ () => Navigation.navigate('HomeScreen')}>
+            <Text style={styles.label2}>Entrar</Text>
           </TouchableOpacity>
         </Animatable.View>
-    </View>
+    </ImageBackground>
   );
 }
