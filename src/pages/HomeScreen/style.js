@@ -54,6 +54,8 @@ const styles = StyleSheet.create({
         height: "90%",
         backgroundColor: 'transparent',
         marginBottom: 10,
+        marginHorizontal: 5,
+        paddingHorizontal: 5,
       },
       box:{
         width: "80%",
@@ -70,6 +72,7 @@ const styles = StyleSheet.create({
       label1:{
         color: '#204F3C',
         fontWeight: "bold",
+        fontSize: 12,
       },
   });
 

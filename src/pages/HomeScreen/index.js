@@ -58,12 +58,13 @@ export default function HomeScreen() {
             </TouchableOpacity>
             <TouchableOpacity 
                 style={styles.button1} 
-                onPress={ () => Navigation.navigate('HomeScreen')}>
+                onPress={ () => Navigation.navigate('Pontos')}>
                 <Image
                     style={styles.imgIcone}
                     source={require('../../../assets/HomeScreen/pontos.png')}
                 />
-                <Text style={styles.label1}>Pontos turísticos</Text>
+                <Text style={styles.label1}>Pontos</Text>
+                <Text style={styles.label1}>turísticos</Text>
             </TouchableOpacity>
             <TouchableOpacity 
                 style={styles.button1} 

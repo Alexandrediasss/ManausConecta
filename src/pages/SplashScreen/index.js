@@ -12,13 +12,13 @@ export default function BackgroundInicial2() {
     source={require('../../img/fundo.png')}
     style={styles.main}>
         <View style={styles.filho1}>
-          <Animatable.Image 
+          <Image 
           source={require('../../img/logo.png')} 
           style={styles.imgLogo} 
           animation="flipInY"
           />
         </View>
-        <Animatable.View style={styles.filho2} animation="fadeInUp" delay={500}>
+        <View style={styles.filho2} animation="fadeInUp" delay={500}>
           <TouchableOpacity 
             style={styles.button1} 
             onPress={ () => Navigation.navigate('HomeScreen')}>
@@ -29,7 +29,7 @@ export default function BackgroundInicial2() {
             onPress={ () => Navigation.navigate('HomeScreen')}>
             <Text style={styles.label2}>Entrar</Text>
           </TouchableOpacity>
-        </Animatable.View>
+        </View>
     </ImageBackground>
   );
 }
