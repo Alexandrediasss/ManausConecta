@@ -8,8 +8,10 @@ import {
 import styles from "./style";
 import MyInput from "./components/MyInput";
 import { useState } from "react";
+import { useNavigation } from '@react-navigation/native';
 
 const CadastroScreen = () => {
+    const Navigation = useNavigation() 
     const [name,setName] = useState('')
     const [overlay, setOverlay] = useState(false)
     const [email, setEmail] = useState('')
@@ -89,7 +91,8 @@ const CadastroScreen = () => {
                         style={[
                         styles.button, 
                         styles.buttonShadow,
-                        styles.androidShadow]}>
+                        styles.androidShadow]}
+                        onPress={ () => Navigation.navigate('LoginScreen')}>
                             <Text style={styles.textButton}>Cadastrar</Text>
                     </TouchableOpacity>
                 </View>

@@ -25,7 +25,7 @@ const MyInput = (props) => {
     }
     return (
         <TouchableOpacity activeOpacity={1} style={styles.inputContainer} onPress={()=>setVisibility(true)}>
-            <Text style={[styles.inputText, { color: props.value === '' ? '#ccc' : '#fff' }]}>
+            <Text style={[styles.inputText, { color: props.value === '' ? '#ccc' : '#FFEDD0' }]}>
                 {props.value === '' ? props.placeholder : props.secureTextEntry ? '•'.repeat(props.value.length) : props.value}
             </Text>
 

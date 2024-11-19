@@ -12,19 +12,10 @@ const Stack = createNativeStackNavigator();
 export default function Routes(){
     return(
         <Stack.Navigator>
-                name="CadastroScreen"
-                component={CadastroScreen}
-                options={{headerShown: false}}
-            />
             <Stack.Screen
                 name="SplashScreen"
                 component={SplashScreen}
                 options={{headerShown: false}}
-            />
-            <Stack.Screen
-                name="LoginScreen"
-                component={LoginScreen}
-                options={{headerShown: false}}  
             />
             <Stack.Screen
                 name="Informativo1"
@@ -39,6 +30,16 @@ export default function Routes(){
             <Stack.Screen
                 name="Informativo3"
                 component={Informativo3}
+                options={{headerShown: false}}  
+            />
+            <Stack.Screen
+                name="LoginScreen"
+                component={LoginScreen}
+                options={{headerShown: false}}
+            />
+            <Stack.Screen
+                name="CadastroScreen"
+                component={CadastroScreen}
                 options={{headerShown: false}}  
             />
         </Stack.Navigator>
