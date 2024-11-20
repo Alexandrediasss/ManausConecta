@@ -36,27 +36,45 @@ const styles = StyleSheet.create({
     },
     label1:{
       color: '#70845F',
-      fontSize: 12,      
+      fontSize: 15,      
       fontWeight: 'bold',
     },
-    textContainer:{
-      width: "50%",
+    label2:{
+      color: '#E3E0E0',
+      fontSize: 15,      
+      fontWeight: 'bold',
+    },
+    imgLogo:{
+      width: '70%',
+      height: '70%',
     },
     textLogo:{
       color: '#FFEDD0',
       fontSize: 100,
       fontWeight: '200',
     },
-      button: {
+      button1: {
       alignItems: 'center',
       padding: 10,
       borderRadius: 10,         
       borderWidth: 2,           
-      borderColor: '#FFEDD0',     
+      borderColor: '#E3E0E0',     
       justifyContent: 'center',
       width: "80%",
       height: "15%",
-      backgroundColor: '#FFEDD0',
+      backgroundColor: '#E3E0E0',
+      marginBottom: 10,
+    },
+    button2: {
+      alignItems: 'center',
+      padding: 10,
+      borderRadius: 10,         
+      borderWidth: 2,           
+      borderColor: '#E3E0E0',     
+      justifyContent: 'center',
+      width: "80%",
+      height: "15%",
+      backgroundColor: 'transparent',
     },
   });
 
