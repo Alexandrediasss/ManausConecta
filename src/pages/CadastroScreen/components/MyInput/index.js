@@ -25,7 +25,7 @@ const MyInput = (props) => {
     }
     return (
         <TouchableOpacity activeOpacity={1} style={styles.inputContainer} onPress={()=>setVisibility(true)}>
-            <Text style={[styles.inputText, { color: props.value === '' ? '#ccc' : '#FFEDD0' }]}>
+            <Text style={[styles.inputText, { color: props.value === '' ? '#878080' : '#FFEDD0' }]}>
                 {props.value === '' ? props.placeholder : props.secureTextEntry ? '•'.repeat(props.value.length) : props.value}
             </Text>
 
@@ -58,21 +58,18 @@ const MyInput = (props) => {
 
 const styles = StyleSheet.create({
     inputContainer: {
-        backgroundColor: '#70845F',
-        borderRadius: 5,
-        width: '80%',
-        height: hp(5),
-        marginTop: wp(3),
-        marginLeft: wp(8),
+        backgroundColor: '#E3E0E0',
         justifyContent: 'center',
-        paddingHorizontal: 10,
-    },
-    inputText: {
-        fontSize: wp(3.5),
+        borderRadius: 10,
+        width: '80%',
+        height: hp(6),
+        marginTop: wp(3),
+        paddingLeft: 10,
+        paddingHorizontal: 20,
     },
     inputWrapper: {
         flex: Platform.OS == 'ios' ? 1 : 0,
-        backgroundColor: '#FFEDD0',
+        backgroundColor: '#242F1F',
         paddingTop: 20,
         paddingBottom: Platform.OS === 'ios' ? 0 : 20,
         borderTopLeftRadius: 12,

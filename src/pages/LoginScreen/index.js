@@ -9,7 +9,6 @@ import {
     Keyboard} from "react-native";
 import styles from "../LoginScreen/style";
 import { useNavigation } from '@react-navigation/native';
-import { Header } from "react-native/Libraries/NewAppScreen";
 
 const LoginScreen = () => {
     const Navigation = useNavigation();
@@ -17,25 +16,26 @@ const LoginScreen = () => {
     return(
         <Pressable style={styles.container} onPress={Keyboard.dismiss}>
             <View style={styles.header}></View>
-            <View style={styles.main}>
+            <View 
+            style={styles.main}>
                 <View style={styles.section1}>
                     <Image
                     style={styles.imgLogo}
-                    source={require('./img/logo.png')} />
+                    source={require('../../img/logo.png')} />
                 </View>
                 <View style={styles.section2}>
-                    <Text style={styles.text}>Login</Text>
+                    <Text style={styles.text}>Email</Text>
                     <TextInput 
                         style={styles.input}
-                        placeholder='Digite seu e-email'
-                        placeholderTextColor={'#ccc'}
+                        placeholder='Informe o seu e-mail'
+                        placeholderTextColor={'#878080'}
                         autoCapitalize="none"
                         keyboardType='email-address' />
                     <Text style={styles.text}>Senha</Text>
                     <TextInput 
                         style={styles.input}
-                        placeholder='Digite sua senha'
-                        placeholderTextColor={'#ccc'}
+                        placeholder='Informe a sua senha'
+                        placeholderTextColor={'#878080'}
                         secureTextEntry />
                 </View>
                 <View style={styles.section3}>
@@ -44,16 +44,8 @@ const LoginScreen = () => {
                         styles.button,
                         styles.buttonShadow,
                         styles.androidShadow,]}
-                        onPress={ () => Navigation.navigate('SplashScreen')}>
-                            <Text style={styles.textButton}>Entrar</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                        style={[
-                        styles.button_2,
-                        styles.buttonShadow,
-                        styles.androidShadow]}
                         onPress={ () => Navigation.navigate('CadastroScreen')}>
-                            <Text style={styles.textButton_2}>Cadastre-se</Text>
+                            <Text style={styles.textButton}>Entrar</Text>
                     </TouchableOpacity>
                 </View>
             </View>

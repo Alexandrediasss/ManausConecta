@@ -5,45 +5,57 @@ const {height, width} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     container: {
-      flex: 2,
-      backgroundColor: '#FFEDD0',
+      flex: 1,
+      backgroundColor: '#242F1F',
+    },
+    main: {
+      flex: 4,
+      display: 'flex',
+    },
+    imgLogo: {
+      width: wp(30),
+      height: hp(30),
     },
     section1: {
-      flex: 2,
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
       //backgroundColor: 'orange',
     },
+    section2: {
+      flex: 2,
+      justifyContent: 'space-evelyn',
+      alignItems: 'center',
+      //backgroundColor: 'skyblue'
+    },
     text: {
-      color: '#CA643C',
-      fontWeight: '400',
-      fontSize: wp(7),
-      marginTop: wp(6),
-      marginLeft: wp(8),
+      color: '#FFFFFF',
+      fontWeight: 'bold',
+      fontSize: wp(5),
+      marginTop: wp(3),
+      marginRight: hp(30),
     },
     input: {
-      backgroundColor: '#70845F',
-      color: '#FFEDD0',
+      backgroundColor: '#E3E0E0',
       borderColor: '#ccc',
-      height: hp(5),
-      fontSize: wp(3.5),
-      borderRadius: 5,
-      marginTop: wp(3),
+      height: hp(6),
+      borderRadius: 10,
       paddingLeft: 10,
       marginHorizontal: 20,
     },
     button: {
-      backgroundColor: '#CA643C',
+      backgroundColor: '#E3E0E0',
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 10,
-      width: '50%',
-      height: hp(5),
-      marginTop: hp(15),
+      width: '80%',
+      height: hp(6),
       shadowColor: '#000',
     },
     textButton: {
-        color: '#FFEDD0',
+        color: '#242F1F',
         fontSize: wp(5),
-        fontWeight: '400',
+        fontWeight: 'bold',
     },
     buttonShadow: {
         shadowOffset: {
@@ -62,10 +74,10 @@ const styles = StyleSheet.create({
       width,
     },
     footer: {
-      flex: 1,
-      justifyContent: 'center',
+      flex: 0.1,
       alignItems: 'center',
-      backgroundColor: 'lightgreen',
+      justifyContent: 'center',
+      //backgroundColor: 'lightgreen',
     },
 })
 

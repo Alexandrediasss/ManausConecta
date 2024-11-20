@@ -13,8 +13,8 @@ export default function Routes(){
     return(
         <Stack.Navigator>
             <Stack.Screen
-                name="SplashScreen"
-                component={SplashScreen}
+                name="LoginScreen"
+                component={LoginScreen}
                 options={{headerShown: false}}
             />
             <Stack.Screen
@@ -33,13 +33,13 @@ export default function Routes(){
                 options={{headerShown: false}}  
             />
             <Stack.Screen
-                name="LoginScreen"
-                component={LoginScreen}
+                name="CadastroScreen"
+                component={CadastroScreen}
                 options={{headerShown: false}}
             />
             <Stack.Screen
-                name="CadastroScreen"
-                component={CadastroScreen}
+                name="SplashScreen"
+                component={SplashScreen}
                 options={{headerShown: false}}  
             />
         </Stack.Navigator>
