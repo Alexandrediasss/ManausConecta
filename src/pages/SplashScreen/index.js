@@ -26,7 +26,7 @@ export default function BackgroundInicial2() {
           </TouchableOpacity>
           <TouchableOpacity 
             style={styles.button2} 
-            onPress={ () => Navigation.navigate('HomeScreen')}>
+            onPress={ () => Navigation.navigate('LoginScreen')}>
             <Text style={styles.label2}>Entrar</Text>
           </TouchableOpacity>
         </View>

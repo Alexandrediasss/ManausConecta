@@ -5,7 +5,11 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor: "#FFEDD0"
+        backgroundColor: "#06421D"
+    },
+    imgLogo: {
+        width: "70%",
+        height: "70%",
     },
     containerLogo: {
         flex: 1,
@@ -21,18 +25,18 @@ const styles = StyleSheet.create({
         
     },
     textInput: {
-        color: '#CA643C',
+        color: '#FFFFFF',
         marginTop: 15,
         marginBottom: 15
 
     },
     input: {
-        backgroundColor: '#70845F',
+        backgroundColor: '#FFFFFF',
         width: 350,
-        marginBottom:15,
-        color:'#fff',
-        fontSize: 15,
-        borderRadius: 2,
+        height: 50,
+        marginBottom:5,
+        fontSize: 10,
+        borderRadius: 7,
         padding:7,
         
     },
@@ -43,61 +47,47 @@ const styles = StyleSheet.create({
         marginTop: 15, 
     },
     buttonAcessar: {
-        backgroundColor: '#CA643C',
-        width: '100%',
-        height:60,
+        backgroundColor: '#FFEDD0',
+        width: 350,
+        height:50,
         alignItems:'center',
         justifyContent:'center',
-        borderRadius: 15,
-
-    },
-    buttonCadastrar: {
-        backgroundColor: '#fff',
-        width: '100%',
-        height:60,
-        alignItems:'center',
-        justifyContent:'center',
-        borderRadius: 15,
-        marginRight: 20
+        borderRadius: 7,
 
     },
     textAcessar: {
-        color: '#FFEDD0',
+        color: '#06421D',
         fontSize: 15
-
-    },
-    textCadastrar: {
-        color: '#CA643C',
-        fontSize: 15
-
     },
     buttonSemCadastro: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 25
-
-
+        marginTop: 25,
+        color:'#06421D'
     },
     textSemCadastro: {
-        color: '#CA643C',
-        fontSize: 13
+        color: '#FFFFFF',
+        fontSize: 13,
+        marginVertical: 15, //AAAAAA
 
     },
     inputWithIcon: {
-        backgroundColor: '#70845F',
-        width: 350,  
-        marginBottom: 15,
-        color: '#fff',
-        fontSize: 15,
-        borderRadius: 2,
+        backgroundColor: '#FFFFFF',
+        width: 350,
+        height: 50,  
+        marginBottom: 145,
+        color: '#000',
+        fontSize: 10,
+        borderRadius: 7,
         padding: 7,
           
     },
     iconInsideInput: {
         position: 'absolute',  // Torna a posição do ícone relativa ao TextInput
         right: 10,  // Coloca o ícone à direita dentro do TextInput
-        top: '-35%',  // Alinha verticalmente no centro do campo
-        color: '#FFEDD0'
+        fontSize: 32,
+        top: '-45%',  // Alinha verticalmente no centro do campo
+        color: '#06421D'
     },
 
     containerInPass: {
