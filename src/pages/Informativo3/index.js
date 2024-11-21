@@ -35,7 +35,7 @@ export default function Informativo3() {
                 <View style={styles.container2}>
                     <TouchableOpacity
                     style={styles.button} 
-                    onPress={ () => Navigation.navigate('SplashScreen')}>
+                    onPress={ () => Navigation.navigate('LoginScreen')}>
                     <Text style={styles.textButton}>➜</Text>
                     </TouchableOpacity>
                 </View>

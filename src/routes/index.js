@@ -9,21 +9,27 @@ import HomeScreen from "../pages/HomeScreen";
 import Hospitais from "../pages/Hospitais";
 import PontosTuristicos from "../pages/PontosTuristicos";
 import Curiosidades from "../pages/Curiosidades";
+import CadastroScreen from "../pages/CadastroScreen";
 
 const Stack = createNativeStackNavigator();
 
 export default function Routes(){
     return(
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="SplashScreen">
             <Stack.Screen
                 name="SplashScreen"
                 component={SplashScreen}
                 options={{headerShown: false}}
             />
             <Stack.Screen
+                name="CadastroScreen"
+                component={CadastroScreen}
+                options={{headerShown: false}}
+            />
+            <Stack.Screen
                 name="LoginScreen"
                 component={LoginScreen}
-                options={{headerShown: false}}  
+                options={{headerShown: false}}
             />
             <Stack.Screen
                 name="Informativo1"

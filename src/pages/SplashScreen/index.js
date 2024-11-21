@@ -13,7 +13,7 @@ export default function BackgroundInicial2() {
     style={styles.main}>
         <View style={styles.filho1}>
           <Image 
-          source={require('../../img/logo.png')} 
+          source={require('../../img/logonova.png')} 
           style={styles.imgLogo} 
           animation="flipInY"
           />
@@ -21,12 +21,12 @@ export default function BackgroundInicial2() {
         <View style={styles.filho2} animation="fadeInUp" delay={500}>
           <TouchableOpacity 
             style={styles.button1} 
-            onPress={ () => Navigation.navigate('HomeScreen')}>
+            onPress={ () => Navigation.navigate('CadastroScreen')}>
             <Text style={styles.label1}>Cadastre-se</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={styles.button2} 
-            onPress={ () => Navigation.navigate('HomeScreen')}>
+            onPress={ () => Navigation.navigate('LoginScreen')}>
             <Text style={styles.label2}>Entrar</Text>
           </TouchableOpacity>
         </View>
