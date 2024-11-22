@@ -6,7 +6,8 @@ import {
     TextInput,
     TouchableOpacity,
     Pressable,
-    Keyboard} from "react-native";
+    Keyboard,
+    ScrollView} from "react-native";
 import styles from "../LoginScreen/style";
 import { useNavigation } from '@react-navigation/native';
 
@@ -14,7 +15,7 @@ const LoginScreen = () => {
     const Navigation = useNavigation();
 
     return(
-        <Pressable style={styles.container} onPress={Keyboard.dismiss}>
+        <ScrollView style={styles.container} onPress={Keyboard.dismiss} scrollEnabled={false}>
             <View style={styles.header}></View>
             <View 
             style={styles.main}>
@@ -50,7 +51,7 @@ const LoginScreen = () => {
                 </View>
             </View>
             <View style={styles.footer}></View>
-        </Pressable>
+        </ScrollView>
     );
 }
 

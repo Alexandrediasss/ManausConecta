@@ -24,12 +24,24 @@ export default function Routes(){
             <Stack.Screen
                 name="CadastroScreen"
                 component={CadastroScreen}
-                options={{headerShown: false}}
+                options={{
+                    headerShown: true,
+                    headerTitle: '',
+                    headerBackTitle: 'Voltar',
+                    headerStyle: { backgroundColor: '#242F1F' },
+                    headerTintColor: '#fff',
+            }}
             />
             <Stack.Screen
                 name="LoginScreen"
                 component={LoginScreen}
-                options={{headerShown: false}}
+                options={{
+                headerShown: true,
+                headerTitle: '',
+                headerBackTitle: 'Voltar',
+                headerStyle: { backgroundColor: '#242F1F' },
+                headerTintColor: '#fff',
+            }}
             />
             <Stack.Screen
                 name="Informativo1"
@@ -56,6 +68,7 @@ export default function Routes(){
                 component={Hospitais}
                 options={{
                     headerShown: true, 
+                    headerBackTitle: 'Voltar',
                     headerStyle: { backgroundColor: '#242F1F' },
                     headerTintColor: '#fff',
             }} 
@@ -66,6 +79,7 @@ export default function Routes(){
                 options={{
                     headerShown: true, 
                     headerTitle: 'Pontos Turísticos',
+                    headerBackTitle: 'Voltar',
                     headerStyle: { backgroundColor: '#242F1F' },
                     headerTintColor: '#fff',
             }} 
@@ -76,6 +90,7 @@ export default function Routes(){
                 options={{
                     headerShown: true, 
                     headerTitle: 'Curiosidades',
+                    headerBackTitle: 'Voltar',
                     headerStyle: { backgroundColor: '#242F1F' },
                     headerTintColor: '#fff',
             }} 

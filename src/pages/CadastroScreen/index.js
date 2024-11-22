@@ -68,8 +68,7 @@ const CadastroScreen = () => {
                         overlay={(v) => setOverlay(v)}
                         secureTextEntry />
                     </View>
-                </ScrollView>
-                <View style={styles.footer}>
+                    <View style={styles.section3}>
                     <TouchableOpacity 
                             style={[
                             styles.button, 
@@ -78,6 +77,9 @@ const CadastroScreen = () => {
                             onPress={ () => Navigation.navigate('LoginScreen')}>
                             <Text style={styles.textButton}>Finalizar cadastro</Text>
                     </TouchableOpacity>
+                    </View>
+                </ScrollView>
+                <View style={styles.footer}>
                 </View>
             {overlay ? <View style={styles.overlay} />:null}
         </SafeAreaView>
