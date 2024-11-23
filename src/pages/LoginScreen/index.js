@@ -1,19 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
     View,
     Text,
     Image,
     TextInput,
     TouchableOpacity,
-    Pressable,
     Keyboard,
     ScrollView} from "react-native";
 import styles from "../LoginScreen/style";
 import { useNavigation } from '@react-navigation/native';
+import { auth } from "../../../firebase";
 
 const LoginScreen = () => {
-    const Navigation = useNavigation();
+    const Navigation = useNavigation()
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
+    const handleLogin = () => {
+        auth 
+            .signInWithEmailAndPassword(email, password)
+            .then(userCredentials => {
+                const user = userCredentials.user
+                console.log('Login realizado como', user.email)
+                Navigation.navigate('HomeScreen')
+            })
+            .catch(error => alert(error.message))
+    }
     return(
         <ScrollView style={styles.container} onPress={Keyboard.dismiss} scrollEnabled={false}>
             <View style={styles.header}></View>
@@ -31,13 +43,16 @@ const LoginScreen = () => {
                         placeholder='Informe o seu e-mail'
                         placeholderTextColor={'#878080'}
                         autoCapitalize="none"
-                        keyboardType='email-address' />
+                        keyboardType='email-address'
+                        onChangeText={text => setEmail(text)} />
+                    
                     <Text style={styles.text}>Senha</Text>
                     <TextInput 
                         style={styles.input}
                         placeholder='Informe a sua senha'
                         placeholderTextColor={'#878080'}
-                        secureTextEntry />
+                        secureTextEntry
+                        onChangeText={text => setPassword(text)} />
                 </View>
                 <View style={styles.section3}>
                     <TouchableOpacity 
@@ -45,7 +60,7 @@ const LoginScreen = () => {
                         styles.button,
                         styles.buttonShadow,
                         styles.androidShadow,]}
-                        onPress={ () => Navigation.navigate('HomeScreen')}>
+                        onPress={handleLogin}>
                             <Text style={styles.textButton}>Entrar</Text>
                     </TouchableOpacity>
                 </View>

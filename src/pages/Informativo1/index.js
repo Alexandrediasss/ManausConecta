@@ -12,7 +12,7 @@ export default function Informativo1() {
         <View style={styles.filho1}>
             <Image
             style={styles.imgLogo}
-            source={require('../../img/manausconectaverde.png')}
+            source={require('../../img/logoBaje.png')}
             />
         </View>
         <View style={styles.filho2}>
@@ -27,7 +27,7 @@ export default function Informativo1() {
                 <View style={styles.container1}>
                     <TouchableOpacity
                     style={styles.button} 
-                    onPress={ () => Navigation.navigate('SplashScreen')}>
+                    onPress={ () => Navigation.navigate('HomeScreen')}>
                     <Text style={styles.textButton}>➜</Text>
                     </TouchableOpacity>
                 </View>

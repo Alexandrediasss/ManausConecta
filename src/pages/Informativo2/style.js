@@ -1,27 +1,27 @@
-import { StyleSheet, TextInputBase } from "react-native";
+import { StyleSheet } from "react-native";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
     main: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#70845F'
+        backgroundColor: '#242F1F',
     },
     imgLogo:{
-        width: "50%",
+        width: wp(40),
+        height: hp(40),
     },
     filho1:{
         flex:1.5,
-        width: "100%",
-        alignItems: 'center',
-        justifyContent: 'center',
     },
     filho2:{
         flex:0.5,
         backgroundColor: '#FFEDD0',
         width: "100%",
         justifyContent: 'center',
-        alignItems: 'center',
+        borderTopLeftRadius: 12,
+        borderTopRightRadius: 12,
     },
     filho3:{
         flex:1.5, 
@@ -58,16 +58,19 @@ const styles = StyleSheet.create({
     },
 
     textFilho2:{
-        color: '#CA643C',
-        fontSize: 30,
+        color: '#242F1F',
+        fontSize: wp(5),
+        fontWeight: 'bold',
         textAlign: 'center',
-        textShadowColor: '#a2a2a2', // Cor da sombra
-        textShadowOffset: { width: -1, height: 2.5 }, // Deslocamento da sombra
-        textShadowRadius: 2, // Raio de desfoque da sombra  
+        shadowOffset: {
+            height: 4,
+        },
+        shadowRadius: 4,
+        shadowOpacity: 0.25,
     },
 
     button: {
-        backgroundColor: '#FFEDD0',
+        backgroundColor: '#242F1F',
         borderRadius: 25,    
         width: 50,          
         height: 50,
@@ -76,18 +79,18 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     textButton: {
-        color: '#CA643C',
-        fontSize: 20,   
+        color: '#FFFFFF',
+        fontSize: 20,
     },
     textSeta:{
         color: 'transparent',
-        fontSize: 20,  
+        fontSize: 20,
     },
     bola1:{
-        backgroundColor: '#FFEDD0',
+        backgroundColor: '#FFFFFF',
         borderRadius: 25,  
         borderWidth: 2,  
-        borderColor: '#FFEDD0',
+        borderColor: '#FFFFFF',
         width: 25,          
         height: 25,
         justifyContent: 'center', 
@@ -98,7 +101,7 @@ const styles = StyleSheet.create({
     bola2:{
         borderRadius: 25,  
         borderWidth: 2,  
-        borderColor: '#FFEDD0',
+        borderColor: '#FFFFFF',
         width: 25,          
         height: 25,
         justifyContent: 'center', 
