@@ -1,4 +1,5 @@
-import { StyleSheet, TextInputBase } from "react-native";
+import { StyleSheet } from "react-native";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
     main: {
@@ -13,22 +14,25 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         alignContent: 'center',
+        //backgroundColor: 'lightgreen',
     },
     filho2:{
         flex: 1,
         width: '100%',
-        alignItems: 'center',
+        alignItems: 'baseline',
         justifyContent: 'center',
         alignContent: 'center',
         flexDirection: "row",
+        //backgroundColor: 'skyblue',
     },
     filho3:{
         flex: 1,
         width: '100%',
-        alignItems: 'center',
+        alignItems: 'baseline',
         justifyContent: 'center',
         alignContent: 'center',
         flexDirection: "row",
+        //backgroundColor: 'orange',
     },
     filho4:{
         flex: 2,
@@ -36,15 +40,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         alignContent: 'center',
+        //backgroundColor: 'tomato',
     },
     imgLogo:{
         width: "70%",
         height: "70%",
     },
     imgIcone:{
-        width: "70%",
-        height: "70%",
-        resizeMode: 'contain'
+        width: wp(10),
+        height: hp(8),
+        resizeMode: 'contain',
     },
     button1: {
         alignItems: 'center',
@@ -72,7 +77,7 @@ const styles = StyleSheet.create({
       label1:{
         color: '#204F3C',
         fontWeight: "bold",
-        fontSize: 12,
+        fontSize: wp(3),
       },
   });
 

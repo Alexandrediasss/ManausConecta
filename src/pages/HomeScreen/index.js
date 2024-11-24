@@ -1,4 +1,4 @@
-import { View, Text, Image, ImageBackground, TouchableOpacity} from 'react-native';
+import { View, Text, Image, ImageBackground, TouchableOpacity, BackHandler, Alert} from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import styles from './style';
 
@@ -19,8 +19,7 @@ export default function HomeScreen() {
         </View>
         <View style={styles.filho2}>
             <TouchableOpacity 
-                style={styles.button1} 
-                onPress={ () => Navigation.navigate('HomeScreen')}>
+                style={styles.button1}>
                 <Image
                     style={styles.imgIcone}
                     source={require('../../../assets/HomeScreen/configuracoes.png')}
@@ -67,8 +66,7 @@ export default function HomeScreen() {
                 <Text style={styles.label1}>turísticos</Text>
             </TouchableOpacity>
             <TouchableOpacity 
-                style={styles.button1} 
-                onPress={ () => Navigation.navigate('HomeScreen')}>
+                style={styles.button1}>
                 <Image
                     style={styles.imgIcone}
                     source={require('../../../assets/HomeScreen/conosco.png')}

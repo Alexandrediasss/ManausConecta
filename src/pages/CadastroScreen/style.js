@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
       display: 'flex',
     },
     imgLogo: {
-      width: wp(30),
-      height: hp(30),
+      width: wp(27),
+      height: hp(27),
     },
     section1: {
       flex: 1,
@@ -27,6 +27,13 @@ const styles = StyleSheet.create({
       justifyContent: 'space-evelyn',
       alignItems: 'center',
       //backgroundColor: 'skyblue'
+    },
+    section3: {
+      flex: 1,
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      marginTop: wp(10),
+      //backgroundColor: 'hotpink'
     },
     text: {
       color: '#FFFFFF',
@@ -74,9 +81,7 @@ const styles = StyleSheet.create({
       width,
     },
     footer: {
-      flex: 0.1,
-      alignItems: 'center',
-      justifyContent: 'center',
+      flex: 0,
       //backgroundColor: 'lightgreen',
     },
 })

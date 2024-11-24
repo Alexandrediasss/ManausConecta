@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     View,
     Text,
@@ -10,6 +10,7 @@ import styles from "./style";
 import MyInput from "./components/MyInput";
 import { useState } from "react";
 import { useNavigation } from '@react-navigation/native';
+import { auth } from "../../../firebase";
 
 const CadastroScreen = () => {
     const Navigation = useNavigation() 
@@ -18,6 +19,17 @@ const CadastroScreen = () => {
     const [email, setEmail] = useState('')
     const [age, setAge] = useState('')
     const [password, setPassword] = useState('')
+
+    const handleSignUp = () => {
+        auth
+            .createUserWithEmailAndPassword(email, password)
+            .then(userCredentials => {
+                const user = userCredentials.user
+                console.log('Registrado como', user.email)
+                Navigation.navigate('LoginScreen')
+            })
+            .catch(error => alert(error.message))
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -44,7 +56,7 @@ const CadastroScreen = () => {
                         value={age} 
                         onChangeText={setAge}
                         placeholderTextColor={'#878080'}
-                        keyboardType='default'
+                        keyboardType='numbers-and-punctuation'
                         overlay={(v) => setOverlay(v)} />
 
                         <Text style={styles.text}>Email</Text>
@@ -68,16 +80,18 @@ const CadastroScreen = () => {
                         overlay={(v) => setOverlay(v)}
                         secureTextEntry />
                     </View>
-                </ScrollView>
-                <View style={styles.footer}>
+                    <View style={styles.section3}>
                     <TouchableOpacity 
                             style={[
                             styles.button, 
                             styles.buttonShadow,
                             styles.androidShadow]}
-                            onPress={ () => Navigation.navigate('LoginScreen')}>
+                            onPress={handleSignUp}>
                             <Text style={styles.textButton}>Finalizar cadastro</Text>
                     </TouchableOpacity>
+                    </View>
+                </ScrollView>
+                <View style={styles.footer}>
                 </View>
             {overlay ? <View style={styles.overlay} />:null}
         </SafeAreaView>

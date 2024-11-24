@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-around',
         alignItems: 'center',
-        marginTop: hp(10),
+        marginTop: hp(5),
         //backgroundColor: 'hotpink'
     },
     text: {

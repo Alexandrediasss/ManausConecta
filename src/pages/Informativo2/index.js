@@ -12,12 +12,11 @@ export default function Informativo2() {
         <View style={styles.filho1}>
             <Image
             style={styles.imgLogo}
-            source={require('../../img/manausconectaverde.png')}
+            source={require('../../img/logoBaje.png')}
             />
         </View>
         <View style={styles.filho2}>
-            <Text style={styles.textFilho2}>Encontre locais</Text>
-            <Text style={styles.textFilho2}>estratégicos</Text>
+            <Text style={styles.textFilho2}>Encontre locais estratégicos</Text>
         </View>
         <View style={styles.filho3}>
             <ImageBackground
