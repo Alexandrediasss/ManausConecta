@@ -10,7 +10,7 @@ import styles from "./style";
 import MyInput from "./components/MyInput";
 import { useState } from "react";
 import { useNavigation } from '@react-navigation/native';
-import { auth } from "../../../firebase";
+import { auth } from "../../../firebase/firebase";
 
 const CadastroScreen = () => {
     const Navigation = useNavigation() 

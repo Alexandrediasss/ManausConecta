@@ -9,7 +9,7 @@ import {
     ScrollView} from "react-native";
 import styles from "../LoginScreen/style";
 import { useNavigation } from '@react-navigation/native';
-import { auth } from "../../../firebase";
+import { auth } from "../../../firebase/firebase";
 
 const LoginScreen = () => {
     const Navigation = useNavigation()
